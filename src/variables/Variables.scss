@@ -1,0 +1,32 @@
+// variables
+// colors
+$blackColor: rgb(24, 24, 24);
+$whiteColor: white;
+$redColor: rgb(175, 2, 2);
+
+// fonts
+$titleFont: Arial, Helvetica, sans-serif;
+$bodyFont: "Times New Roman", Times, serif;
+
+// mixins
+// this one's a mixin (sass version of a function)
+@mixin buttonStyle {
+  width: 200px;
+  height: 40px;
+  background-color: $redColor;
+  border: none;
+  border-radius: 8px;
+  color: $whiteColor;
+  font-size: 20px;
+}
+
+// mixins accept parameters like regular functions
+@mixin buttonStyle2($color, $fontSize) {
+  width: 200px;
+  height: 40px;
+  background-color: $color;
+  border: none;
+  border-radius: 8px;
+  color: $whiteColor;
+  font-size: $fontSize;
+}
